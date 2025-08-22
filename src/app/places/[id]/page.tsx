@@ -5,13 +5,7 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
   MapPin,
@@ -22,7 +16,6 @@ import {
   Navigation,
   Share2,
   Calendar,
-  Users,
   Camera,
   ArrowLeft,
   CheckCircle,

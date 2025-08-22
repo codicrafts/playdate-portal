@@ -3,13 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import {
@@ -23,7 +17,6 @@ import {
   Users,
   Bell,
   Shield,
-  Eye,
   Edit,
   Camera,
   Award,
@@ -158,7 +151,6 @@ const reviews = [
 
 export default function ProfilePage() {
   const [activeTab, setActiveTab] = useState("overview");
-  const [isEditing, setIsEditing] = useState(false);
 
   const tabs = [
     { id: "overview", name: "个人概览", icon: User },

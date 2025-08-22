@@ -18,11 +18,6 @@ import {
   Eye,
   Search,
   Plus,
-  TrendingUp,
-  Star,
-  User,
-  Clock,
-  Users,
   Camera,
   Award,
 } from "lucide-react";

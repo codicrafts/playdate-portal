@@ -4,32 +4,22 @@ import { useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import {
   Calendar,
   MapPin,
   Users,
-  Clock,
   Heart,
   Share2,
   ArrowLeft,
   Star,
   User,
-  Phone,
   MessageCircle,
   CheckCircle,
   AlertCircle,
-  Gift,
   Camera,
-  Target,
 } from "lucide-react";
 
 // 模拟活动详细数据

@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Heart, Eye, ArrowRight, User } from "lucide-react";
+import { MessageCircle, Heart, Eye, ArrowRight } from "lucide-react";
 
 // 模拟数据
 const hotTopics = [

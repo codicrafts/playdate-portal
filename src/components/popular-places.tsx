@@ -1,9 +1,15 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { MapPin, Star, Clock, ArrowRight } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Star, Clock, ArrowRight } from "lucide-react";
 
 // 模拟数据
 const popularPlaces = [
@@ -15,8 +21,9 @@ const popularPlaces = [
     rating: 4.8,
     reviewCount: 126,
     openTime: "6:00-22:00",
-    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop",
-    tags: ["免费", "停车位", "大型设施"]
+    image:
+      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop",
+    tags: ["免费", "停车位", "大型设施"],
   },
   {
     id: 2,
@@ -26,8 +33,9 @@ const popularPlaces = [
     rating: 4.6,
     reviewCount: 89,
     openTime: "9:00-21:00",
-    image: "https://images.unsplash.com/photo-1520238884173-e5da2eaee4e7?w=400&h=300&fit=crop",
-    tags: ["室内", "恒温", "年卡优惠"]
+    image:
+      "https://images.unsplash.com/photo-1520238884173-e5da2eaee4e7?w=400&h=300&fit=crop",
+    tags: ["室内", "恒温", "年卡优惠"],
   },
   {
     id: 3,
@@ -37,8 +45,9 @@ const popularPlaces = [
     rating: 4.9,
     reviewCount: 203,
     openTime: "9:00-17:00",
-    image: "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=400&h=300&fit=crop",
-    tags: ["教育", "海洋", "互动体验"]
+    image:
+      "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=400&h=300&fit=crop",
+    tags: ["教育", "海洋", "互动体验"],
   },
   {
     id: 4,
@@ -48,10 +57,11 @@ const popularPlaces = [
     rating: 4.7,
     reviewCount: 156,
     openTime: "8:00-18:00",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop",
-    tags: ["自然", "探险", "空气清新"]
-  }
-]
+    image:
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop",
+    tags: ["自然", "探险", "空气清新"],
+  },
+];
 
 export function PopularPlaces() {
   return (
@@ -59,7 +69,9 @@ export function PopularPlaces() {
       <div className="mx-auto w-full max-w-7xl px-4">
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-2">热门遛娃地点</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-2">
+              热门遛娃地点
+            </h2>
             <p className="text-gray-600">发现最受家长们喜爱的遛娃好去处</p>
           </div>
           <Button variant="outline" asChild>
@@ -72,7 +84,10 @@ export function PopularPlaces() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {popularPlaces.map((place) => (
-            <Card key={place.id} className="group hover:shadow-lg transition-shadow cursor-pointer">
+            <Card
+              key={place.id}
+              className="group hover:shadow-lg transition-shadow cursor-pointer"
+            >
               <div className="relative aspect-[4/3] overflow-hidden rounded-t-lg">
                 <Image
                   src={place.image}
@@ -84,7 +99,7 @@ export function PopularPlaces() {
                   {place.category}
                 </Badge>
               </div>
-              
+
               <CardHeader className="pb-2">
                 <CardTitle className="text-lg">{place.name}</CardTitle>
                 <div className="flex items-center space-x-4 text-sm text-gray-600">
@@ -99,9 +114,11 @@ export function PopularPlaces() {
                   </div>
                 </div>
               </CardHeader>
-              
+
               <CardContent className="pt-0">
-                <CardDescription className="mb-3">{place.description}</CardDescription>
+                <CardDescription className="mb-3">
+                  {place.description}
+                </CardDescription>
                 <div className="flex flex-wrap gap-1">
                   {place.tags.map((tag) => (
                     <Badge key={tag} variant="secondary" className="text-xs">
@@ -115,5 +132,5 @@ export function PopularPlaces() {
         </div>
       </div>
     </section>
-  )
+  );
 }

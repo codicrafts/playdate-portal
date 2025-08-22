@@ -21,7 +21,6 @@ import {
   Filter,
   Heart,
   Star,
-  User,
 } from "lucide-react";
 
 // 活动分类

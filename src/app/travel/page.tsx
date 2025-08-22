@@ -14,19 +14,13 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import {
-  Plane,
   MapPin,
   Calendar,
   Users,
   Star,
   Search,
-  Filter,
   Clock,
   Heart,
-  Camera,
-  Car,
-  Hotel,
-  UtensilsCrossed,
   Mountain,
   Waves,
   Building,

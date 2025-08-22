@@ -19,7 +19,6 @@ import {
   Clock,
   Heart,
   Search,
-  Filter,
   Map,
   List,
   Phone,
